@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalTextAlignment="Center" VerticalAlignment="Center" FontSize="31">Welcome to Interactive Communication</TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock HorizontalTextAlignment="Center" VerticalAlignment="Center" FontSize="31">Welcome to Interactive Communication.</TextBlock>
+            <TextBlock HorizontalTextAlignment="Center" VerticalAlignment="Center" FontSize="25">Enter your query below and press Enter.</TextBlock>
+            <TextBox AutomationProperties.Name="simple TextBox" x:Name="VideoText" BorderBrush="RosyBrown" MaxHeight="100" Height="35" Width="552" />
+            <MediaPlayerElement x:Name="VideoState" Visibility="Collapsed"
+                    MaxWidth="900" MaxHeight="500"  AutoPlay="False"
+                    AreTransportControlsEnabled="True" Margin="-9,50,9,-50" Height="500"/>
+        </StackPanel>
+       
+
     </Grid>
 </Page>
